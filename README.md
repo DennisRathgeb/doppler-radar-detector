@@ -53,20 +53,6 @@ For the full long-form writeup including design rationale, signal-path math, and
 | `docs/`                   | Concept report (PDF), block diagram, amplifier-stage test notes |
 | `SUMMARY.md`              | Full long-form technical writeup (~3,700 words) |
 
-## Folder Map (original ZHAW submission → this repo)
-
-| Original                                        | New                           |
-|-------------------------------------------------|-------------------------------|
-| `02_Hardware/`                                  | `hardware/`                   |
-| `04_Matlab/`                                    | `matlab/`                     |
-| `06_Firmware/Radar_v2/`                         | `firmware/stm32/`             |
-| `06_Firmware/ESP32/version_0.1/versio0.1/`      | `firmware/esp32/`             |
-| `07_HW_FW_Concept_Test/01_Calculate_Tolerance/` | `tests/hw-concept-tolerance/` |
-| `08_Test/01_hardware/Amplifierstage.md`         | `docs/amplifier-stage.md`     |
-| `09_Desktop_Application/01_python/`             | `desktop-app/`                |
-| `12_FastAPI/`                                   | `backend/`                    |
-| `01_Admin/`, `11_Video/`, office docs           | dropped (content extracted into `SUMMARY.md`) |
-
 ## Quickstart
 
 ### STM32 firmware
@@ -116,7 +102,7 @@ The first run auto-downloads the YOLOv8n weights (~6 MB) via `ultralytics`. For 
 
 ZHAW PM4 team project, spring semester 2025. Authors: Dennis Rathgeb, Bryan Uhlmann, Benjamin Tschopp.
 
-The original collaboration took place on ZHAW's internal GitHub instance; this public repository is a slimmed, portfolio-oriented mirror.
+The original collaboration took place on ZHAW's internal GitHub instance; this public repository is a slimmed mirror.
 
 ## License
 
