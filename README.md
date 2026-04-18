@@ -31,8 +31,6 @@ Full schematic of the analog / radar board: [docs/schematic.pdf](docs/schematic.
 - **ESP32 WiFi bridge over SPI** (STM32 master, ESP32 slave on HSPI, handshake line) → FastAPI backend.
 - **YOLOv8 angle-of-arrival fusion** on the desktop — webcam + neural net → class + angle; radar → speed; Android GPS (UDP NMEA) → ground-truth reference.
 
-For the full long-form writeup including design rationale, signal-path math, and a candid retrospective, see **[SUMMARY.md](SUMMARY.md)**.
-
 ## Repository Map
 
 | Path                      | What's there |
@@ -47,11 +45,10 @@ For the full long-form writeup including design rationale, signal-path math, and
 | `matlab/CW_Doppler/`      | Reference signal-chain simulation (synthetic target → FFT → peak) |
 | `firmware/stm32/`         | STM32F429 firmware — Core, Drivers, Middlewares, TouchGFX, user modules (`measurement.c`, `vco.c`, `timing.c`, `esp.c`, ...), STM32CubeIDE project |
 | `firmware/esp32/`         | ESP-IDF project (WiFi STA + SPI slave bridge) |
-| `backend/`                | FastAPI backend (early stub — see SUMMARY §13) |
+| `backend/`                | FastAPI backend (early stub) |
 | `desktop-app/`            | Python fusion app: YOLOv8 detection + Android GPS UDP listener + cv2 live overlay |
 | `tests/hw-concept-tolerance/` | HW tolerance scripts |
 | `docs/`                   | Concept report (PDF), block diagram, amplifier-stage test notes |
-| `SUMMARY.md`              | Full long-form technical writeup (~3,700 words) |
 
 ## Quickstart
 
@@ -85,7 +82,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-Note: the backend is an early scaffold — see `SUMMARY.md` §13.
+Note: the backend is an early scaffold.
 
 ### Desktop application
 
