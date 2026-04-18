@@ -14,7 +14,13 @@
 
 ## Block Diagram
 
-![Block diagram](docs/block-diagram.png)
+![System block diagram](docs/block-diagram.png)
+
+MCU-side signal flow:
+
+![STM32 data path — I/Q → ADC → DMA → SRAM → FFT, and the transmit branch SRAM → DMA → DAC → VCO](docs/mcu-data-path.png)
+
+Full schematic of the analog / radar board: [docs/schematic.pdf](docs/schematic.pdf).
 
 ## Highlights
 
