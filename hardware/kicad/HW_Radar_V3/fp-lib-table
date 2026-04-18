@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "HW_Radar")(type "KiCad")(uri "${KIPRJMOD}/HW_Radar.pretty")(options "")(descr ""))
+)

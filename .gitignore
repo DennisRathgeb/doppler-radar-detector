@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ML weights (auto-downloaded at runtime)
+*.pt
+*.onnx
+*.pth
+
+# STM32CubeIDE / EWARM / MDK-ARM build artifacts
+Debug/
+Release/
+EWARM/
+MDK-ARM/
+.metadata/
+*.elf
+*.hex
+*.bin
+*.o
+*.d
+*.list
+*.map
+*.su
+*.cyclo
+backup_*.ioc
+
+# ESP-IDF
+build/
+sdkconfig.old
+managed_components/
+
+# KiCad
+*-backups/
+*.kicad_prl
+fp-info-cache
+*.bak
+*.lck
+
+# MATLAB
+*.asv
+*.m~
+slprj/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Office document lockfiles
+~$*
